@@ -1,0 +1,109 @@
+/* App.css */
+
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #17113e;
+  /* background-color: #f0f4f8; */
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* App Container */
+.App {
+  background-color: #fff;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+/* Heading */
+h1 {
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Todo List */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Todo Item */
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+/* Todo Item Checkbox */
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Completed Todo Item */
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Delete Button */
+.todo-item button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.todo-item button:hover {
+  background-color: #c82333;
+}
+
+/* Todo Form */
+.todo-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.todo-form input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+}
+
+.todo-form button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.todo-form button:hover {
+  background-color: #218838;
+}
