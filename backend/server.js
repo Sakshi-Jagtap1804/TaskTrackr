@@ -12,11 +12,24 @@ const errorHandler = require('./middleware/errorHandler')
 // Initialize Express app
 const app = express()
 
+app.use(
+  cors({
+    origin: ['https://task-trackr-olive.vercel.app'],
+    methods: ['POST', 'GET'],
+    credentials: true,
+  }),
+)
+
 // Connect to MongoDB
 connectDB()
 
 // Middleware to parse JSON bodies
 app.use(express.json()) // Parse JSON bodies
+
+mongoose.connect(
+  'mongodb+srv://sakshijagtap222:Saskhi@MongoDBAtlas22#@test-taskt.ppgcg.mongodb.net/test-taskT?retryWrites=true&w=majority&appName=test-taskT',
+)
+
 app.use(cors()) //Enable CORS
 
 // Use routes
